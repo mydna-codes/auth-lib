@@ -1,13 +1,15 @@
 package codes.mydna.auth.keycloak;
 
-import codes.mydna.auth.User;
+import codes.mydna.auth.common.AuthenticationContext;
+import codes.mydna.auth.common.User;
 import com.mjamsek.auth.keycloak.context.AuthContext;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 
+
 @RequestScoped
-public class KeycloakContext {
+public class KeycloakContext extends AuthenticationContext {
 
     @Inject
     private AuthContext authContext;

@@ -1,4 +1,4 @@
-package codes.mydna.auth;
+package codes.mydna.auth.common;
 
 import java.util.List;
 
@@ -40,4 +40,5 @@ public class User {
     public void setRealmRoles(List<String> realmRoles) {
         this.realmRoles = realmRoles;
     }
+
 }
