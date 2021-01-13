@@ -23,7 +23,7 @@ public class KeycloakContext extends AuthenticationContext {
             user.setId(authContext.getId());
             user.setUsername(authContext.getUsername());
             user.setEmail(authContext.getEmail());
-            user.setRealmRoles(authContext.getRealmRoles());
+            user.setRoles(authContext.getRealmRoles());
         }
 
         return user;
