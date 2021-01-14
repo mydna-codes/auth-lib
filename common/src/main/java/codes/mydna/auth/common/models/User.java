@@ -1,9 +1,7 @@
-package codes.mydna.auth.common;
+package codes.mydna.auth.common.models;
 
 import codes.mydna.auth.common.enums.Role;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class User {
@@ -41,19 +39,8 @@ public class User {
         return roles;
     }
 
-    public void setRoles(List<String> roles) {
-        ArrayList<Role> roleList = new ArrayList<>();
-        if(roles == null) {
-            this.roles = roleList;
-            return;
-        }
-
-        Role[] possibleRoles = Role.values();
-        for(String role : roles){
-            if(Arrays.stream(possibleRoles).anyMatch(r -> r.getName().equals(role))) {
-                roleList.add(Role.valueOf(role));
-            }
-        }
-        this.roles = roleList;
+    public void setRoles(List<Role> roles){
+        this.roles = roles;
     }
+
 }

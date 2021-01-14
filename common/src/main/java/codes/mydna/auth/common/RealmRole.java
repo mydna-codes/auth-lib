@@ -1,4 +1,4 @@
-package codes.mydna.auth.common.enums;
+package codes.mydna.auth.common;
 
 public class RealmRole {
 

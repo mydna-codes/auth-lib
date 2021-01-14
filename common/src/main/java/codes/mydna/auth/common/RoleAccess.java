@@ -2,6 +2,7 @@ package codes.mydna.auth.common;
 
 import codes.mydna.auth.common.enums.Privilege;
 import codes.mydna.auth.common.enums.Role;
+import codes.mydna.auth.common.models.User;
 
 import java.util.*;
 

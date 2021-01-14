@@ -1,5 +1,9 @@
 package codes.mydna.auth.common.enums;
 
+import codes.mydna.auth.common.RealmRole;
+
+import java.util.Arrays;
+
 public enum Role {
 
     GUEST("mdc_guest"),
@@ -13,8 +17,15 @@ public enum Role {
         this.name = name;
     }
 
-    public String getName() {
+    public String getRoleName() {
         return name;
+    }
+
+    public static Role getRoleFromName(String roleName){
+        return Arrays.stream(Role.values())
+                .filter(r -> r.getRoleName().equals(roleName))
+                .findFirst()
+                .orElse(null);
     }
 
 }
