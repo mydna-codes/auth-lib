@@ -14,10 +14,12 @@ public class RoleAccess {
         roleMapping = new HashMap<>();
 
         roleMapping.put(Role.ADMIN, new HashSet<>(Arrays.asList(
-                Privilege.MODIFY_PUBLIC_SEQUENCE
+                Privilege.MODIFY_PUBLIC_SEQUENCE,
+                Privilege.LARGE_SCALE_ANALYSIS
         )));
 
         roleMapping.put(Role.PRO_USER, new HashSet<>(Arrays.asList(
+                Privilege.LARGE_SCALE_ANALYSIS
         )));
 
         roleMapping.put(Role.USER, new HashSet<>(Arrays.asList(
