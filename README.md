@@ -13,7 +13,7 @@ mvn clean deploy
     <dependency>
         <groupId>codes.mydna</groupId>
         <artifactId>auth-keycloak</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.1-SNAPSHOT</version>
     </dependency>
 </dependencies>
 ```
